@@ -126,11 +126,10 @@ Check the Java installation:
 
 ```bash
 java -version
-
+```
 ```bash
 javac -version
 ```
-
 Check Git:
 
 ```bash
