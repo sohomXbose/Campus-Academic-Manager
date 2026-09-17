@@ -1,0 +1,1 @@
+package edu.cam.domain; public enum Semester { SPRING, MONSOON, WINTER; }
