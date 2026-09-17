@@ -1,7 +1,7 @@
-package edu.cam.cli;
+package cli;
 
-import edu.cam.domain.*;
-import edu.cam.service.*;
+import domain.*;
+import service.*;
 
 import java.util.*;
 
