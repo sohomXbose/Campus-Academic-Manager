@@ -42,4 +42,4 @@ Repository
 In-Memory Data
 ```
 
-** Architecture type:** Layered / modular architecture.
+**Architecture type:** Layered / modular architecture.
