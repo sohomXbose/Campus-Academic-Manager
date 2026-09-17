@@ -1,4 +1,4 @@
-package edu.cam.domain;
+package domain;
 
 public enum Grade {
     APLUS(10), A(9), B(8), C(7), D(6), E(5), F(0);
