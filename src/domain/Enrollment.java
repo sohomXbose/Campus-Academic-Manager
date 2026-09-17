@@ -1,4 +1,4 @@
-package edu.cam.domain;
+package domain;
 
 import java.time.LocalDate;
 import java.util.Optional;
