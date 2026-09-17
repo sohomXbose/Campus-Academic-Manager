@@ -6,6 +6,10 @@ Campus Academic Manager is a command-line academic management application. The p
 
 The system provides functionality for managing students, courses, and enrollments.
 
+## Diagram
+
+<img width="911" height="1352" alt="Image" src="https://github.com/user-attachments/assets/aad8e3fd-1f49-4f1e-aefb-fd6e804f0ce7" />
+
 ## Primary Actor
 
 ### User
