@@ -305,6 +305,7 @@ Detailed project documentation is available in the `docs/` directory.
 * [Class Diagram](docs/class-diagram.md)
 * [Sequence Diagram](docs/sequence-diagram.md)
 * [Testing Documentation](docs/testing.md)
+* [Storage Design](docs/storage-design.md)
 
 The project statement is available in [`statement.md`](statement.md).
 
