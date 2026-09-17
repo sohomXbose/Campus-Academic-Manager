@@ -4,6 +4,10 @@
 
 The Campus Academic Manager is organized into domain classes and service classes. The domain classes represent the main entities of the academic system, while the service classes handle operations related to those entities.
 
+## Diagram
+
+<img width="2010" height="1507" alt="Image" src="https://github.com/user-attachments/assets/996530cd-1366-4ad4-8872-45b42aa8ed64" />
+
 ## Domain Classes
 
 ### Person
