@@ -14,3 +14,30 @@ The Campus Academic Manager follows a modular layered architecture.
 - **Service Layer:** Contains `StudentManager`, `CourseManager`, and `EnrollmentManager` for application operations.
 - **Domain Layer:** Contains the core entities such as Student, Course, Enrollment, Instructor, Grade, and Semester.
 - **Repository:** Handles the storage and retrieval of application data.
+
+## Architecture Explanation
+
+User
+ ↓
+Command Line Interface
+ ↓
+App.java
+ ↓
+Service Layer
+ ├── StudentManager
+ ├── CourseManager
+ └── EnrollmentManager
+ ↓
+Domain Layer
+ ├── Student
+ ├── Course
+ ├── Enrollment
+ ├── Instructor
+ ├── Grade
+ └── Semester
+ ↓
+Repository
+ ↓
+In-Memory Data
+
+** Architecture type:** Layered / modular architecture.
