@@ -1,4 +1,4 @@
-package edu.cam.domain;
+package domain;
 
 public class Instructor extends Person {
     private String department;
