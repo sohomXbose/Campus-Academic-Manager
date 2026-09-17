@@ -6,9 +6,9 @@ This document describes the sequence of interactions involved when a user enroll
 
 The sequence demonstrates the interaction between the User, the command-line application, the EnrollmentManager, the StudentManager, the CourseManager, and the Repository.
 
-##Diagram
+## Diagram
 
-
+<img width="2632" height="2494" alt="Image" src="https://github.com/user-attachments/assets/7dd90d30-edb0-4445-a364-58bb9774fd2b" />
 
 ## Enroll Student Sequence
 
