@@ -17,27 +17,29 @@ The Campus Academic Manager follows a modular layered architecture.
 
 ## Architecture Explanation
 
+```text
 User
- ↓
+  ↓
 Command Line Interface
- ↓
+  ↓
 App.java
- ↓
+  ↓
 Service Layer
- ├── StudentManager
- ├── CourseManager
- └── EnrollmentManager
- ↓
+  ├── StudentManager
+  ├── CourseManager
+  └── EnrollmentManager
+  ↓
 Domain Layer
- ├── Student
- ├── Course
- ├── Enrollment
- ├── Instructor
- ├── Grade
- └── Semester
- ↓
+  ├── Student
+  ├── Course
+  ├── Enrollment
+  ├── Instructor
+  ├── Grade
+  └── Semester
+  ↓
 Repository
- ↓
+  ↓
 In-Memory Data
+```
 
 ** Architecture type:** Layered / modular architecture.
