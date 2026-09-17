@@ -2,7 +2,7 @@
 
 ## Architecture Diagram
 
-![Campus Academic Manager Architecture]
+https://github.com/sohomXbose/Campus-Academic-Manager/blob/main/docs/architecture.png?raw=true
 
 
 ## Architecture Description
