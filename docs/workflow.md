@@ -1,6 +1,6 @@
 # 2. Workflow Diagram
 
-
+<img width="4703" height="2004" alt="Image" src="https://github.com/user-attachments/assets/ceb420d3-e495-455e-9066-7f5e3df899eb" />
 
 ### Workflow Explanation
 
