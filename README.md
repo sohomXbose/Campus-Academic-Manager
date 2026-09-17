@@ -184,7 +184,7 @@ javac -d out $(find src -name "*.java")
 After successful compilation, run:
 
 ```bash
-java -cp out edu.cam.cli.App
+java -cp out cli.App
 ```
 
 The application starts through the command-line interface and displays the main menu.
@@ -317,17 +317,17 @@ The project statement is available in [`statement.md`](statement.md).
 
 ## Design
 
-The project follows a modular structure consisting of:
+The project follows a modular architecture consisting of:
 
-* Command-line interface
-* Service layer
-* Domain layer
-* Repository-based data management
+- Command-line interface
+- Configuration layer
+- Service layer
+- Domain layer
+- Repository-based data management
+- CSV-based data files
 
-The CLI layer handles user interaction, the service layer manages application operations, the domain layer represents academic entities, and the repository provides data storage and retrieval functionality.
-
-Detailed design documentation is available in the `docs/` directory.
-
+Detailed architecture information is available in
+[Architecture Documentation](docs/architecture.md).
 ---
 
 ## Future Enhancements
