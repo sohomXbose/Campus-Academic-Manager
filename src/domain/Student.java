@@ -1,4 +1,4 @@
-package edu.cam.domain;
+package domain;
 
 import java.util.*;
 
