@@ -1,4 +1,4 @@
-package edu.cam.service;
+package service;
 
 import edu.cam.domain.*;
 import java.util.*;
