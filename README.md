@@ -113,9 +113,6 @@ Campus-Academic-Manager/
 - **`README.md`** — Provides project overview, setup, execution, features, and documentation links.
 - **`statement.md`** — Contains the project problem statement, objectives, scope, and related information.
 - **`.gitignore`** — Specifies files and directories that should not be tracked by Git.
-```
-
----
 
 ## Requirements
 
@@ -129,7 +126,6 @@ Check the Java installation:
 
 ```bash
 java -version
-```
 
 ```bash
 javac -version
