@@ -4,181 +4,142 @@
 
 Campus Academic Manager is tested through command-line execution and functional validation of its major modules.
 
-The testing focuses on verifying:
+The testing focuses on:
 
-- Application startup
-- Student management
-- Course management
-- Enrollment management
-- Score recording
-- Input validation
-- Application termination
-
----
+* Application startup
+* Student management
+* Course management
+* Enrollment management
+* Score recording
+* Input validation
+* Application termination
 
 ## 2. Testing Environment
 
-| Component | Requirement |
-|---|---|
-| Programming Language | Java |
-| Interface | Command Line |
-| Compiler | javac |
-| Runtime | Java |
-| Operating System | Windows / Linux / macOS |
-| Testing Method | Functional and validation testing |
-
----
+| Component            | Requirement                               |
+| -------------------- | ----------------------------------------- |
+| Programming Language | Java                                      |
+| Interface            | Command Line                              |
+| Compiler             | `javac`                                   |
+| Runtime              | Java                                      |
+| Operating System     | Windows / Linux / macOS                   |
+| Testing Method       | Functional Testing and Validation Testing |
 
 ## 3. Functional Test Cases
 
 ### TC-01: Application Startup
 
-**Input:** Run the application from the terminal.
+**Action:** Run the application from the terminal.
 
-**Expected Result:**  
-The Campus Academic Manager main menu is displayed.
+**Expected Result:**
+The Campus Academic Manager starts successfully and displays the main menu.
 
-**Status:** PASS
+**Result:** PASS / FAIL
 
 ---
 
 ### TC-02: Add Student
 
-**Input:** Select the Students module and choose Add.
+**Action:** Select Student Management and add a student using valid information.
 
-**Expected Result:**  
-The system accepts valid student information and creates the student record.
+**Expected Result:**
+The student information is accepted and a student record is created.
 
-**Status:** PASS
+**Result:** PASS / FAIL
 
 ---
 
 ### TC-03: List Students
 
-**Input:** Select the Students module and choose List.
+**Action:** Select the option to list students.
 
-**Expected Result:**  
-The available student records are displayed.
+**Expected Result:**
+Available student records are displayed.
 
-**Status:** PASS
+**Result:** PASS / FAIL
 
 ---
 
 ### TC-04: View Student Information
 
-**Input:** Provide a valid student identifier.
+**Action:** Provide a valid student identifier.
 
-**Expected Result:**  
+**Expected Result:**
 The corresponding student information is displayed.
 
-**Status:** PASS
+**Result:** PASS / FAIL
 
 ---
 
 ### TC-05: Add Course
 
-**Input:** Select the Courses module and choose Add.
+**Action:** Select Course Management and add a course using valid information.
 
-**Expected Result:**  
-The course information is accepted and the course is created.
+**Expected Result:**
+The course information is accepted and a course record is created.
 
-**Status:** PASS
+**Result:** PASS / FAIL
 
 ---
 
 ### TC-06: List Courses
 
-**Input:** Select the Courses module and choose List.
+**Action:** Select the option to list courses.
 
-**Expected Result:**  
-Available courses are displayed.
+**Expected Result:**
+Available course records are displayed.
 
-**Status:** PASS
+**Result:** PASS / FAIL
 
 ---
 
 ### TC-07: Enroll Student
 
-**Input:** Provide a valid student ID and course ID.
+**Action:** Provide a valid student identifier and course identifier.
 
-**Expected Result:**  
-The student is enrolled in the selected course.
+**Expected Result:**
+The student is successfully enrolled in the selected course.
 
-**Status:** PASS
+**Result:** PASS / FAIL
 
 ---
 
 ### TC-08: Record Score
 
-**Input:** Provide a valid enrollment and score.
+**Action:** Provide valid enrollment information and an academic score.
 
-**Expected Result:**  
+**Expected Result:**
 The score is recorded for the enrollment.
 
-**Status:** PASS
+**Result:** PASS / FAIL
 
 ---
 
 ### TC-09: Invalid Student or Course
 
-**Input:** Provide a student ID or course ID that does not exist.
+**Action:** Provide an invalid student identifier or course identifier during enrollment.
 
-**Expected Result:**  
-The system identifies the invalid reference and does not create an invalid enrollment.
+**Expected Result:**
+The system identifies the invalid reference and prevents the invalid enrollment.
 
-**Status:** PASS
+**Result:** PASS / FAIL
 
 ---
 
 ### TC-10: Exit Application
 
-**Input:** Select the Exit option.
+**Action:** Select the Exit option.
 
-**Expected Result:**  
+**Expected Result:**
 The application terminates normally.
 
-**Status:** PASS
+**Result:** PASS / FAIL
 
----
-
-## 4. Validation Testing
-
-The application validates important entity references before performing enrollment operations.
-
-For example:
-
-```text
-Student ID → Student lookup
-Course ID  → Course lookup
-      ↓
-Both valid?
-   /       \
- Yes       No
- ↓          ↓
-Create     Display
-Enrollment Error
-
-## 5. Command-Line Execution Test
-
-The project is designed to be compiled and executed directly from the command line without requiring a graphical development environment.
-
-### Linux / macOS
-
-Compile the Java source files:
-
-```bash
-javac -d out $(find src -name "*.java")
-```
-
-Run the application:
-
-```bash
-java -cp out edu.cam.cli.App
-```
+## 4. Command-Line Execution Test
 
 ### Windows PowerShell
 
-Create the output directory and compile the Java source files:
+Create the output directory and compile the source files:
 
 ```powershell
 New-Item -ItemType Directory -Force out
@@ -191,41 +152,35 @@ Run the application:
 java -cp out edu.cam.cli.App
 ```
 
-### Expected Result
+### Linux / macOS
 
-After successful compilation and execution, the Campus Academic Manager command-line interface starts and displays the main menu.
+Compile the source files:
 
-The user can then select the required module and perform the available operations.
+```bash
+mkdir -p out
+javac -d out $(find src -name "*.java")
+```
 
----
+Run the application:
 
-## 6. Testing Summary
+```bash
+java -cp out edu.cam.cli.App
+```
 
-The application was tested through command-line execution and functional testing of its major modules.
+## 5. Test Summary
 
-| Module | Tests Performed | Result |
-|---|---:|---|
-| Application Startup | 1 | PASS |
-| Student Management | 3 | PASS |
-| Course Management | 2 | PASS |
-| Enrollment Management | 2 | PASS |
-| Validation | 1 | PASS |
-| Application Exit | 1 | PASS |
+| Test Area             | Test Cases |
+| --------------------- | ---------: |
+| Application Startup   |          1 |
+| Student Management    |          3 |
+| Course Management     |          2 |
+| Enrollment Management |          2 |
+| Validation            |          1 |
+| Application Exit      |          1 |
+| **Total**             |     **10** |
 
-### Testing Areas
+## 6. Testing Conclusion
 
-The testing covered the following areas:
+The test cases cover the major functional workflows of the Campus Academic Manager. The application should be executed from the command line and each test case should be verified before the final submission.
 
-- Application startup and command-line execution
-- Student creation and retrieval
-- Student listing
-- Student information viewing
-- Course creation and listing
-- Student enrollment
-- Academic score recording
-- Invalid input and entity validation
-- Application termination
-
-### Testing Conclusion
-
-The application was tested through command-line execution, and the major functional workflows were verified successfully.
+The final PASS/FAIL status should reflect the actual result observed during testing.
