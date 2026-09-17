@@ -1,4 +1,4 @@
-package edu.cam.domain;
+package domain;
 
 public class Course {
     private final String code;
